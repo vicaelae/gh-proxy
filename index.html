@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+<!-- 引入 layui.css -->
+<link href="//unpkg.com/layui@2.7.6/dist/css/layui.css" rel="stylesheet">
+ 
+<!-- 引入 layui.js -->
+<script src="//unpkg.com/layui@2.7.6/dist/layui.js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,11 +23,11 @@
 <h1 style="margin-bottom: 50px">GitHub 文件加速</h1>
 <form action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex" onsubmit="toSubmit(event)">
     <label class="block" style="width: fit-content">
-        <input class="block url" name="q" type="text" placeholder="键入Github文件链接"
+        <input class="layui-input" name="q" type="text" placeholder="键入Github文件链接"
                pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob|raw|suites)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$" required>
         <div class="bar"></div>
     </label>
-    <input class="block btn" type="submit" value="下载">
+    <input class="layui-btn layui-btn-normal" type="submit" value="下载">
     
         
 </form>
